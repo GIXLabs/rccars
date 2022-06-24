@@ -1,5 +1,5 @@
-// The bluetooth Android control app can be downloaded from: https://play.google.com/store/apps/details?id=braulio.calle.bluetoothRCcontroller
-// The documentation for the bluetooth app can be found in https://sites.google.com/site/bluetoothrccar/
+// The bluetooth Android control app can be downloaded from: https://play.google.com/store/apps/details?id=braulio.calle.bluetoothRCcontroller.
+// The documentation for the bluetooth app can be found in https://sites.google.com/site/bluetoothrccar/.
 
 #include <SoftwareSerial.h>
 #include "Wire.h"
