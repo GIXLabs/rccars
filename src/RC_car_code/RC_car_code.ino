@@ -1,3 +1,6 @@
+// The bluetooth Android control app can be downloaded from: https://play.google.com/store/apps/details?id=braulio.calle.bluetoothRCcontroller
+// The documentation for the bluetooth app can be found in https://sites.google.com/site/bluetoothrccar/
+
 #include <SoftwareSerial.h>
 #include "Wire.h"
 #include <Servo.h>
@@ -11,27 +14,21 @@ Servo servo_1;
 int ang_int = 90;
 int velocity = 255;
 
-
 // constants won't change. They're used here to set pin numbers:
 const int buttonPin = 8;     // the number of the pushbutton pin
 const int ledPin =  12  ;      // the number of the LED pin
 int buttonState = 0;         // variable for reading the pushbutton status
 int duration = 0;
 
-
-
 void setup() {
-
-
   pinMode(B1A, OUTPUT);
   pinMode(B1B, OUTPUT);
-  
   
   // initialize the LED pin as an output:
   pinMode(ledPin, OUTPUT);
   // initialize the pushbutton pin as an input:
   pinMode(buttonPin, INPUT);
-
+  
   Serial.begin(9600);
   BTserial.begin(9600);
   BTserial.print("AT+NAME");
@@ -41,10 +38,7 @@ void setup() {
   delay(1000);
 }
 
-
-
-void loop() {
-  
+void loop() {  
   buttonState = digitalRead(buttonPin);
   t = BTserial.read();
   // check if the pushbutton is pressed. If it is, the buttonState is HIGH.
@@ -62,9 +56,7 @@ void loop() {
   }else{
     duration = 0;
   }
-
-
-
+  
   if (t == '0') {
     velocity = 0;
   }  else if (t == '1') {
@@ -76,7 +68,7 @@ void loop() {
   } else if (t == '4') {
     velocity = 255;
   }
-
+  
   if (t == 'F') {
     analogWrite(B1A, 0);
     analogWrite(B1B,  velocity);
@@ -114,5 +106,4 @@ void loop() {
     analogWrite(B1B, 0);
     servo_1.write(ang_int);
   }
-
 }
