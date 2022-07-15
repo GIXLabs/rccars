@@ -60,7 +60,7 @@ void forward() {          // function for forward
   analogWrite(B2, 0);
 }
 
-void backward() {         // function of backward
+void backward() {         // function for backward
   Serial.println("2 pressed | Backward");
   analogWrite(A1, 0);
   analogWrite(A2, 210);
