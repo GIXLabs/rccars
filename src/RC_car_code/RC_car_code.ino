@@ -20,10 +20,7 @@ void setup() {
   
   Serial.begin(9600); // opens serial port, sets data rate to 9600 bps
 
-  Serial.println("select direction of movement");
-  Serial.println("1.forward");
-  Serial.println("2.backward");
-  Serial.println("3.stop");
+  Serial.println("Connect to your bluetooth device, and send commands to serial port.");
   BTserial.begin(9600);
   BTserial.print("AT+NAME");
   BTserial.print("RC_Textbed");
@@ -53,14 +50,14 @@ void loop() {
   }
 }
 }
-void forward() {          // function for forward 
+void forward() {
   analogWrite(A1, 210);
   analogWrite(A2, 0);
   analogWrite(B1, 210);
   analogWrite(B2, 0);
 }
 
-void backward() {         // function for backward
+void backward() {
   Serial.println("2 pressed | Backward");
   analogWrite(A1, 0);
   analogWrite(A2, 210);
@@ -68,21 +65,21 @@ void backward() {         // function for backward
   analogWrite(B2, 210);
 }
 
-void left() {             // function for left   
+void left() {             
   analogWrite(A1, 255);
   analogWrite(A2, 0);
   analogWrite(B1, 150);
   analogWrite(B2, 0);
 }
 
-void right() {            // function for right
+void right() {            
   analogWrite(A1, 150);
   analogWrite(A2, 0);
   analogWrite(B1, 255);
   analogWrite(B2, 0);
 }
 
-void Stop() {              // function for stop
+void Stop() {             
   digitalWrite(A1, LOW);
   digitalWrite(A2, LOW);
   digitalWrite(B1, LOW);
