@@ -86,6 +86,9 @@
 <hole x="55.88" y="49.53" drill="2.54"/>
 <hole x="55.88" y="3.81" drill="2.54"/>
 <text x="2.54" y="19.05" size="1.778" layer="21" rot="R90">GND</text>
+<wire x1="50.8" y1="30.48" x2="53.34" y2="30.48" width="0.254" layer="21"/>
+<wire x1="53.34" y1="30.48" x2="53.34" y2="22.86" width="0.254" layer="21"/>
+<wire x1="53.34" y1="22.86" x2="50.8" y2="22.86" width="0.254" layer="21"/>
 </plain>
 <libraries>
 <library name="RC Car">
