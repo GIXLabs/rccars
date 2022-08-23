@@ -1,5 +1,5 @@
 #include <SoftwareSerial.h>
-SoftwareSerial BTserial(3, 2); 
+SoftwareSerial BTserial(2, 3); 
 
 #define A1 5  // Motor A pins
 #define A2 6
