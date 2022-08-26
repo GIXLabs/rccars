@@ -3,8 +3,8 @@ SoftwareSerial BTserial(2, 3);
 
 #define A1 5  // Motor A pins
 #define A2 6
-#define B1 10 // Motor B pins
-#define B2 11
+#define B1 11 // Motor B pins
+#define B2 10
 
 int bt_input = 0; // for incoming signal from bluetooth
 void setup() {
