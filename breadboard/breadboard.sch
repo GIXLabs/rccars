@@ -92,18 +92,6 @@
 <pad name="D12" x="-17.78" y="0" drill="1.016" shape="long" rot="R90"/>
 <pad name="TX1" x="17.78" y="0" drill="1.016" shape="long" rot="R90"/>
 </package>
-<package name="L9100S">
-<pad name="B-1A" x="-7.62" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="B-2A" x="-5.08" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="GND" x="-2.54" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="VCC" x="0" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="A-1A" x="2.54" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="A-1B" x="5.08" y="0" drill="1.016" shape="long" rot="R90"/>
-<wire x1="-10.16" y1="2.54" x2="-10.16" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="-10.16" y1="-2.54" x2="7.62" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="7.62" y1="-2.54" x2="7.62" y2="2.54" width="0.127" layer="21"/>
-<wire x1="7.62" y1="2.54" x2="-10.16" y2="2.54" width="0.127" layer="21"/>
-</package>
 <package name="ARDUINO-NANO-JUMPER-2">
 <pad name="A4" x="0" y="0" drill="1.016" shape="long" rot="R90"/>
 <pad name="A5" x="2.54" y="0" drill="1.016" shape="long" rot="R90"/>
@@ -139,18 +127,6 @@
 <pin name="RST" x="15.24" y="0" length="middle" rot="R90"/>
 <pin name="RX0" x="17.78" y="0" length="middle" rot="R90"/>
 <pin name="TX1" x="20.32" y="0" length="middle" rot="R90"/>
-</symbol>
-<symbol name="L9110S">
-<pin name="B-1A" x="-7.62" y="-5.08" length="middle" rot="R90"/>
-<pin name="B-2A" x="-5.08" y="-5.08" length="middle" rot="R90"/>
-<pin name="GND" x="-2.54" y="-5.08" length="middle" rot="R90"/>
-<pin name="VCC" x="0" y="-5.08" length="middle" rot="R90"/>
-<pin name="A-1A" x="2.54" y="-5.08" length="middle" rot="R90"/>
-<pin name="A-1B" x="5.08" y="-5.08" length="middle" rot="R90"/>
-<wire x1="-12.7" y1="0" x2="10.16" y2="0" width="0.254" layer="94"/>
-<wire x1="10.16" y1="0" x2="10.16" y2="20.32" width="0.254" layer="94"/>
-<wire x1="10.16" y1="20.32" x2="-12.7" y2="20.32" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="20.32" x2="-12.7" y2="0" width="0.254" layer="94"/>
 </symbol>
 <symbol name="ARDUIN0-NANO-JUMPER-2">
 <pin name="A4" x="0" y="0" length="middle" rot="R270"/>
@@ -200,26 +176,6 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="L9110S">
-<gates>
-<gate name="G$1" symbol="L9110S" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="L9100S">
-<connects>
-<connect gate="G$1" pin="A-1A" pad="A-1A"/>
-<connect gate="G$1" pin="A-1B" pad="A-1B"/>
-<connect gate="G$1" pin="B-1A" pad="B-1A"/>
-<connect gate="G$1" pin="B-2A" pad="B-2A"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="VCC" pad="VCC"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="ARDUINO-NANO-JUMPER-2">
 <gates>
 <gate name="G$1" symbol="ARDUIN0-NANO-JUMPER-2" x="0" y="0"/>
@@ -261,68 +217,20 @@
 </class>
 </classes>
 <parts>
-<part name="U$1" library="RC Car" deviceset="ARDUINO-NANO-JUMPER-1" device=""/>
-<part name="U$2" library="RC Car" deviceset="L9110S" device=""/>
-<part name="U$7" library="RC Car" deviceset="ARDUINO-NANO-JUMPER-2" device=""/>
+<part name="U$2" library="RC Car" deviceset="ARDUINO-NANO-JUMPER-1" device=""/>
+<part name="U$5" library="RC Car" deviceset="ARDUINO-NANO-JUMPER-2" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="U$1" gate="G$1" x="71.12" y="30.48" smashed="yes"/>
-<instance part="U$2" gate="G$1" x="99.06" y="50.8" smashed="yes" rot="R270"/>
-<instance part="U$7" gate="G$1" x="154.94" y="68.58" smashed="yes" rot="R270"/>
+<instance part="U$2" gate="G$1" x="35.56" y="10.16" smashed="yes" rot="R270"/>
+<instance part="U$5" gate="G$1" x="-27.94" y="7.62" smashed="yes" rot="R270"/>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="D06" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="D06"/>
-<wire x1="71.12" y1="30.48" x2="71.12" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="A-1A"/>
-<wire x1="71.12" y1="48.26" x2="93.98" y2="48.26" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="D05" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="D05"/>
-<pinref part="U$2" gate="G$1" pin="A-1B"/>
-<wire x1="73.66" y1="30.48" x2="73.66" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="45.72" x2="93.98" y2="45.72" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="GND" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="GND"/>
-<wire x1="93.98" y1="53.34" x2="154.94" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="U$7" gate="G$1" pin="GND"/>
-</segment>
-</net>
-<net name="VIN" class="0">
-<segment>
-<pinref part="U$7" gate="G$1" pin="VIN"/>
-<pinref part="U$2" gate="G$1" pin="VCC"/>
-<wire x1="154.94" y1="50.8" x2="93.98" y2="50.8" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="D10"/>
-<wire x1="60.96" y1="30.48" x2="60.96" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="55.88" x2="93.98" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="B-2A"/>
-</segment>
-</net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="B-1A"/>
-<wire x1="93.98" y1="58.42" x2="58.42" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="58.42" x2="58.42" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="D11"/>
-</segment>
-</net>
 </nets>
 </sheet>
 </sheets>
