@@ -1,16 +1,29 @@
 # Purpose
-To contain the files needed for the RC cars activity. 
+To provide instructions to how to make a RC car.  
 
-# Instructions
-1. Stack the Arduino Nano on to the brain board. Solder the Arduino board to the brain board and solder the headers on the side. Like this:  
+# Instructions for building the rccar
+1. Stack the **motor board** on top of the **brain board**. 
 
-![brainboard](/assets/tutorial/brainboard.png)
+2. Take the **motors** and connect the wires to the motor board. You might need to see if the wheels are turning to the right direction. 
 
-2. Solder the 9V batery connector and make sure your power and ground are hooked up to the correct places. 
+![motorboard](/assets/tutorial/motorboard.png)
 
->Red to + & Black to -
+3. Stack the **bluetooth board** on top of the two other boards that you just stacked together. Make sure the rounded corners are aligned. 
 
-3. Solder the motor to the motor board and solder the headers on the side. Then stack this board onto the brain board. 
+![bluetoothboard](/assets/tutorial/bluetoothboard.png)
 
-4. Bluetooth board
+4. Cut a board to make it as the bottom of the rccar. Make sure it holds everything!
 
+5. Stick the motors to the board you just cut. Also connect the wheels to the motors. 
+
+6. Attach the battery to the car and you are ready to go. 
+
+
+# Instructions for starting the car
+1. Get an android phone and open the **Bluetooth RC Car**. 
+
+2. Click on the option menu and then click on "Connect to car". You should be able to see the car's number in the list.
+
+3. After you're connected, you are ready to go! 
+
+4. To change the speed of the car, you would need to learn how to flash the code, go [here](https://github.com/GIXLabs/rccars/blob/main/tutorials/flash_code.md).
