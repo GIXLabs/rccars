@@ -21,11 +21,14 @@ To provide instructions to how to make a RC car.
 
 # Instructions for building the RC car
 
-1. Ensure you have all the components with you. Once you have confirmed that you have all the components, you want to first start soldering all the components to the proper board.
+1. Ensure you have all the soldered components with you. Once you have confirmed that you have all the components you can go on to step 2. 
+
+**IF** you want to solder gather all the components and look at an example to ensure the components are properly placed:
    - The arduino nano and the 9v battery connector to the **brain board**
    - The servo motor driver to the **motor board**
    - The bluetooth module, resistors, and capacitor to the **bluetooth board**
-2. Once all the components are soldered, you want to stack the **motor board** on top of the **brain board**. To indicate it's stacked properly, ensure that the rounded corners of the board are aligned.
+   
+2. You want to stack the **motor board** on top of the **brain board**. To indicate it's stacked properly, ensure that the rounded corners of the board are aligned.
 
 3. Connect the **2 servos** to the servo motor driver. When connecting the servo to the motor driver make sure that the left servo is connected to motor B of the motor driver, and the right is connected to motor A of the motor driver.
 
