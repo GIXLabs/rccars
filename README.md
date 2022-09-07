@@ -13,8 +13,9 @@ To provide instructions to how to make a RC car.
 - 1k resistor
 - 2k resistor
 - 330µF capacitor
-- 8 headers
-- 2 sets of tires
+- 2 female headers
+- 4 male headers
+- 1 pair of tires
 - 1 pingpong ball
 - Custom built rc car body
 
@@ -24,9 +25,9 @@ To provide instructions to how to make a RC car.
    - The arduino nano and the 9v battery connector to the **brain board**
    - The servo motor driver to the **motor board**
    - The bluetooth module, resistors, and capacitor to the **bluetooth board**
-2. Once all the components are soldered, you want to stack the **motor board** on top of the **brain board** to indicate it's stacked properly ensure that the rounded corners are aligned.
+2. Once all the components are soldered, you want to stack the **motor board** on top of the **brain board**. To indicate it's stacked properly, ensure that the rounded corners of the board are aligned.
 
-3. Connect the **2 servos** to the servo motor driver. When connecting the servo to the motor driver make sure that the left servo is connected to motor B and right is connected to motor A.
+3. Connect the **2 servos** to the servo motor driver. When connecting the servo to the motor driver make sure that the left servo is connected to motor B of the motor driver, and the right is connected to motor A of the motor driver.
 
 ![motorboard](/assets/tutorial/motorboard.png)
 
