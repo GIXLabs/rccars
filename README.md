@@ -29,11 +29,7 @@ To provide instructions to how to make a RC car.
 
 3. Connect the **2 servos** to the servo motor driver. When connecting the servo to the motor driver make sure that the left servo is connected to motor B of the motor driver, and the right is connected to motor A of the motor driver.
 
-![motorboard](/assets/tutorial/motorboard.png)
-
 4. Stack the **bluetooth board** on top of the **motor board**. Make sure the rounded corners are aligned.
-
-![bluetoothboard](/assets/tutorial/bluetoothboard.png)
 
 5. Design and build the body of the rc car, you are welcome to use the materials provided in the makerspace from cardboard to wood. Make sure it holds everything! If you do decide to use the MDF, Birch, or Acrylic make sure you have done your [first laser cut tutorial](https://gixlabs.github.io/how_to/first_lasercut.html) before using any of the laser cutters.
 
