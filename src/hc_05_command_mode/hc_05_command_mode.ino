@@ -1,6 +1,6 @@
 #include <SoftwareSerial.h>
 
-SoftwareSerial Bluetooth(2,3);
+SoftwareSerial Bluetooth(3,2);
 
 char c=' ';
 
