@@ -1,6 +1,6 @@
 #include <SoftwareSerial.h>
 
-#define BT_NAME   "BT_APPRENTICE"
+#define BT_NAME "BT_APPRENTICE"
 
 SoftwareSerial mySerial(3, 2); // RX, TX
 

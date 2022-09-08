@@ -1,5 +1,5 @@
 #include <SoftwareSerial.h>
-SoftwareSerial BTserial(2, 3); 
+SoftwareSerial BTserial(3, 2); 
 
 #define A1 5  // Motor A pins
 #define A2 6
@@ -47,10 +47,14 @@ void loop() {
       case 'R':
         right();       // if input=R, motors turn right
         break;
+    }
+  }
+  else {
+    Serial.println("Not connected");
   }
 }
-}
 void forward() {
+  Serial.println("Forward");          
   analogWrite(A1, 210);
   analogWrite(A2, 0);
   analogWrite(B1, 210);
@@ -66,20 +70,23 @@ void backward() {
 }
 
 void left() {             
-  analogWrite(A1, 255);
-  analogWrite(A2, 0);
-  analogWrite(B1, 150);
-  analogWrite(B2, 0);
-}
-
-void right() {            
+  Serial.println("Left");
   analogWrite(A1, 150);
   analogWrite(A2, 0);
   analogWrite(B1, 255);
   analogWrite(B2, 0);
 }
 
-void Stop() {             
+void right() {   
+  Serial.println("Left");
+  analogWrite(A1, 255);
+  analogWrite(A2, 0);
+  analogWrite(B1, 150);
+  analogWrite(B2, 0);
+}
+
+void Stop() {   
+  Serial.println("Stop");          
   digitalWrite(A1, LOW);
   digitalWrite(A2, LOW);
   digitalWrite(B1, LOW);
