@@ -1,11 +1,13 @@
 # Purpose
 
-To provide instructions to how to make a RC car.
+The following tutorial will get you up and running to build an RC car with the provided materials. All of the soldering is already done and the code is flashed onto the brain board. It will be your responsibility to use the tools provided to you in your orientation bag along with the tools available in the Makerspace to design and build a chassis for your car. 
 
-### List of Components needed
+### Bill of Materials
 
-- 1 arduino nano
-- 1 9v battery
+- ![](/assets/readme/brain_board.jpeg)
+  *1 brain board with Arduino Nano and battery connector*
+- ![](/assets/readme/battery.jpeg) 
+  *1 9v battery*
 - 1 9v battery connector (clip or holder)
 - 1 servo motor driver
 - 2 servos
@@ -17,7 +19,7 @@ To provide instructions to how to make a RC car.
 - 4 male headers
 - 1 pair of tires
 - 1 pingpong ball
-- Custom built rc car body
+- Custom built RC car body (you will design this)
 
 # Instructions for building the RC car
 
