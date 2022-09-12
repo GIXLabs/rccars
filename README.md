@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Purpose
 
 To provide instructions to how to make a RC car.
@@ -49,3 +50,7 @@ To provide instructions to how to make a RC car.
 ### Congratulations you are now connected to the rc car! Happy racing! 🏁🏎
 
 To change the speed of the rc car, you'll need to learn how to flash code to the rc car [here](https://github.com/GIXLabs/rccars/blob/main/tutorials/flash_code.md).
+=======
+# rccars_pcb
+This repo is to upload changes for the pcb
+>>>>>>> pcb/main
