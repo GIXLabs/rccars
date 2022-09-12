@@ -3,11 +3,14 @@
 #define BT_APPREN   "BT_APPRENTICE"
 #define BT_MASTER   "BT_MASTER"
 
+//#define APPREN_ADDRESS "0021,07,0036AE"
+
 SoftwareSerial apprenSerial(5, 4); // RX, TX
-SoftwareSerial masterSerial(7, 6);
+//SoftwareSerial masterSerial(7, 6);
 
 void setup()
 {
+  
   // Apprentice
   Serial.begin(38400);
 
@@ -21,6 +24,8 @@ void setup()
   apprenSerial.print("AT+ADDR?\r\n");
   delay(100);
 
+
+  
   apprenSerial.print("AT+NAME="+String(BT_APPREN)+"\r\n");
   delay(100);
   apprenSerial.print("AT+PSWD=\"1234\"\r\n");
@@ -51,7 +56,7 @@ void setup()
   masterSerial.print("AT+PSWD=\"1234\"\r\n");
   updateSerial();
   delay(100);
-  masterSerial.print("AT+BIND="+String(APPREN_ADDRESS)+"\r\n");
+//  masterSerial.print("AT+BIND="+String(APPREN_ADDRESS)+"\r\n");
   updateSerial();
   delay(100);
   masterSerial.print("AT+UART=38400,0,0\r\n");
@@ -60,6 +65,10 @@ void setup()
   masterSerial.print("AT+UART?\r\n");
   updateSerial();
   delay(100);
+}
+
+void updateSerial(void)
+{
 }
 
 void loop()
