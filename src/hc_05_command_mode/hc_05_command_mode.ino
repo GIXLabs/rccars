@@ -1,6 +1,6 @@
 #include <SoftwareSerial.h>
 
-SoftwareSerial Bluetooth(2,3);
+SoftwareSerial Bluetooth(3,2);
 
 char c=' ';
 
@@ -12,10 +12,10 @@ void setup() {
 
   Serial.println("ready for AT commands");
   Bluetooth.begin(38400);
-//  Bluetooth.println("AT");
-//  Bluetooth.println("AT+UART?");
-//  Bluetooth.println("AT+ROLE?");
-//  Bluetooth.println("AT+ADDR?");
+  // Bluetooth.println("AT");
+  // Bluetooth.println("AT+UART?");
+  // Bluetooth.println("AT+ROLE?");
+  // Bluetooth.println("AT+ADDR?");
 }
 
 void loop() {
