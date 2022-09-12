@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Purpose
 
 The following tutorial will get you up and running to build an RC car with the provided materials. All of the soldering is already done and the code is flashed onto the brain board. It will be your responsibility to use the tools provided to you in your orientation bag along with the tools available in the Makerspace to design and build a chassis for your car. 
@@ -46,3 +47,7 @@ The following tutorial will get you up and running to build an RC car with the p
 ### Congratulations you are now connected to the rc car! Happy racing! 🏁🏎
 
 To change the speed of the rc car, you'll need to learn how to flash code to the rc car [here](https://github.com/GIXLabs/rccars/blob/main/tutorials/flash_code.md).
+=======
+# rccars_pcb
+This repo is to upload changes for the pcb
+>>>>>>> pcb/main
