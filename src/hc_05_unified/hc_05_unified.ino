@@ -10,7 +10,6 @@ SoftwareSerial apprenSerial(5, 4); // RX, TX
 
 void setup()
 {
-  
   // Apprentice
   Serial.begin(38400);
 
@@ -84,3 +83,4 @@ void loop()
   if (Serial.available())
     masterSerial.write(Serial.read());
 }
+
