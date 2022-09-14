@@ -6,6 +6,7 @@ SoftwareSerial BTserial(3, 2);
 #define B1 11 // Motor B pins
 #define B2 10
 
+int motor_speed = 180;
 int bt_input = 0; // for incoming signal from bluetooth
 void setup() {
   pinMode(A1, OUTPUT);
@@ -23,7 +24,7 @@ void setup() {
   Serial.println("Connect to your bluetooth device, and send commands to serial port.");
   BTserial.begin(9600);
   BTserial.print("AT+NAME");
-  BTserial.print("RC_Textbed");
+  BTserial.print("RC_HOME_GROWN");
 }
 
 void loop() {
@@ -39,7 +40,7 @@ void loop() {
         backward();
         break;
       case 'S':         // if input=S, motors stop
-        Stop();
+        stop_all();
         break;
       case 'L':
         left();         // if input=L, motors turn left
@@ -55,37 +56,37 @@ void loop() {
 }
 void forward() {
   Serial.println("Forward");          
-  analogWrite(A1, 210);
+  analogWrite(A1, motor_speed);
   analogWrite(A2, 0);
-  analogWrite(B1, 210);
+  analogWrite(B1, motor_speed);
   analogWrite(B2, 0);
 }
 
 void backward() {
   Serial.println("2 pressed | Backward");
   analogWrite(A1, 0);
-  analogWrite(A2, 210);
+  analogWrite(A2, motor_speed);
   analogWrite(B1, 0);
-  analogWrite(B2, 210);
+  analogWrite(B2, motor_speed);
 }
 
 void left() {             
   Serial.println("Left");
-  analogWrite(A1, 150);
+  analogWrite(A1, 0); //
   analogWrite(A2, 0);
-  analogWrite(B1, 255);
+  analogWrite(B1, motor_speed);
   analogWrite(B2, 0);
 }
 
 void right() {   
   Serial.println("Left");
-  analogWrite(A1, 255);
+  analogWrite(A1, motor_speed);
   analogWrite(A2, 0);
-  analogWrite(B1, 150);
+  analogWrite(B1, 0); //
   analogWrite(B2, 0);
 }
 
-void Stop() {   
+void stop_all() {   
   Serial.println("Stop");          
   digitalWrite(A1, LOW);
   digitalWrite(A2, LOW);
