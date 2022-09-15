@@ -52,7 +52,8 @@ void loop() {
   }
   else
   {
-//    Serial.println("Stopping");
+    Serial.println("Stopping");
     BTserial.print('S');  
   }
+  delay(30);
 }
