@@ -50,5 +50,10 @@ void loop() {
     Serial.println("Right bumper pressed");
     BTserial.print('F');  
   }
+  else
+  {
+    Serial.println("Stopping");
+    BTserial.print('S');  
+  }
   delay(30);
 }
