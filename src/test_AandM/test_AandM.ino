@@ -11,25 +11,15 @@ const byte numChars = 50;
 char receivedChars[numChars];
 boolean newData = false;
 
-
 void setup() {
   Serial.begin(38400);
 
   apprenSerial.begin(38400);
   Serial.println("Arduino receiver");
-
-//  apprenSerial.print("AT\r\n");
-//  delay(100);
-//  apprenSerial.print("AT+RMAAD\r\n");
-//  delay(100);
   apprenSerial.print("AT+ADDR?\r\n");
   delay(100);
   apprenSerial.print("AT+NAME="+String(BT_APPREN)+"\r\n");
   delay(100);
-//  apprenSerial.print("AT+PSWD=\"1234\"\r\n");
-//  delay(100);
-//  apprenSerial.print("AT+ROLE?\r\n");
-//  delay(100);
   apprenSerial.print("AT+UART=38400,0,0\r\n");
   delay(1500);
   recvWithStartEndMarkers();
@@ -41,35 +31,16 @@ void setup() {
 
 
   // Master
-  Serial.begin(38400);
-
   masterSerial.begin(38400);
   Serial.println("Master");
-
-//  masterSerial.print("AT\r\n");
-//  updateSerial();
-//  delay(100);
-//  masterSerial.print("AT+RMAAD\r\n");
-//  updateSerial();
-//  delay(100);
   masterSerial.print("AT+ROLE=1\r\n");
-  updateSerial();
   delay(100);  
   masterSerial.print("AT+NAME="+String(BT_MASTER)+"\r\n");
-  updateSerial();
   delay(100);
-//  masterSerial.print("AT+PSWD=\"1234\"\r\n");
-//  updateSerial();
-//  delay(100);
   masterSerial.print("AT+BIND="+String(APPREN_ADDRESS)+"\r\n");
-  updateSerial();
   delay(100);
   masterSerial.print("AT+UART=38400,0,0\r\n");
-  updateSerial();
   delay(200);
-//  masterSerial.print("AT+UART?\r\n");
-//  updateSerial();
-//  delay(100);
 }
 
 void loop() {
@@ -92,7 +63,6 @@ void recvWithStartEndMarkers() {
     char startMarker = '+';
     char endMarker = '\n';
     char rc;
- 
     while (apprenSerial.available() > 0 && newData == false) {
         rc = apprenSerial.read();
 
@@ -111,7 +81,6 @@ void recvWithStartEndMarkers() {
                 newData = true;
             }
         }
-
         else if (rc == startMarker) {
             recvInProgress = true;
         }
@@ -133,8 +102,4 @@ void parseData(){
   }
   Serial.println(&receivedChars[5]);//print from from after first ':' to end
   APPREN_ADDRESS = &receivedChars[5];
-}
-
-void updateSerial(void)
-{
 }
