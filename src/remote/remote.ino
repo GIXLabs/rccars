@@ -16,7 +16,7 @@ void setup() {
   pinMode(LBUMPER, INPUT_PULLUP);
   pinMode(RBUMPER, INPUT_PULLUP);
   Serial.begin(9600);
-  BTserial.begin(9600);
+  BTserial.begin(38400);
 }
 
 void loop() {
@@ -50,5 +50,9 @@ void loop() {
     Serial.println("Right bumper pressed");
     BTserial.print('F');  
   }
-  delay(30);
+  else
+  {
+//    Serial.println("Stopping");
+    BTserial.print('S');  
+  }
 }
