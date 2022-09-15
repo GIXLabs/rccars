@@ -17,7 +17,6 @@ void setup()
   delay(100);
   mySerial.print("AT+ADDR?\r\n");
   delay(100);
-
   mySerial.print("AT+NAME="+String(BT_NAME)+"\r\n");
   delay(100);
   mySerial.print("AT+PSWD=\"1234\"\r\n");

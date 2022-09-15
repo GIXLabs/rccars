@@ -22,7 +22,7 @@ void setup() {
   Serial.begin(9600); // opens serial port, sets data rate to 9600 bps
 
   Serial.println("Connect to your bluetooth device, and send commands to serial port.");
-  BTserial.begin(9600);
+  BTserial.begin(38400);
   BTserial.print("AT+NAME");
   BTserial.print("RC_HOME_GROWN");
 }
