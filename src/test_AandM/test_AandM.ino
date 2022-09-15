@@ -1,7 +1,7 @@
 #include <SoftwareSerial.h>
 
-#define BT_APPREN   "BT_APPRENTICE"
-#define BT_MASTER   "BT_MASTER"
+#define BT_MASTER   "RCM_01"
+#define BT_APPREN   "RCA_01"
 String APPREN_ADDRESS;
 
 SoftwareSerial apprenSerial(5, 4); // RX, TX
@@ -16,6 +16,8 @@ void setup() {
 
   apprenSerial.begin(38400);
   Serial.println("Arduino receiver");
+  apprenSerial.print("AT+ROLE=0\r\n");
+  delay(100);  
   apprenSerial.print("AT+ADDR?\r\n");
   delay(100);
   apprenSerial.print("AT+NAME="+String(BT_APPREN)+"\r\n");
@@ -46,14 +48,14 @@ void setup() {
 void loop() {
   if (apprenSerial.available())
     Serial.write(apprenSerial.read());
-  if (Serial.available())
-    apprenSerial.write(Serial.read());
+  // if (Serial.available())
+  //   apprenSerial.write(Serial.read());
 
     // master 
-  if (masterSerial.available())
-    Serial.write(masterSerial.read());
-  if (Serial.available())
-    masterSerial.write(Serial.read());
+  // if (masterSerial.available())
+  //   Serial.write(masterSerial.read());
+  // if (Serial.available())
+  //   masterSerial.write(Serial.read());
 
 }
 
