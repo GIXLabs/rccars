@@ -1,7 +1,7 @@
 #include <SoftwareSerial.h>
 
-#define BT_MASTER   "RCM_01"
-#define BT_APPREN   "RCA_01"
+#define BT_MASTER   "RCM_20"
+#define BT_APPREN   "RCA_20"
 String APPREN_ADDRESS;
 
 SoftwareSerial apprenSerial(5, 4); // RX, TX

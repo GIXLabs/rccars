@@ -23,8 +23,8 @@ void setup() {
 
   Serial.println("Connect to your bluetooth device, and send commands to serial port.");
   BTserial.begin(38400);
-  BTserial.print("AT+NAME");
-  BTserial.print("RC_HOME_GROWN");
+//  BTserial.print("AT+NAME");
+//  BTserial.print("RC_HOME_GROWN");
 }
 
 void loop() {
