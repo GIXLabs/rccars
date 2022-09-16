@@ -35,6 +35,8 @@ The following tutorial will get you up and running to build an RC car with the p
 
 2. Once the app has installed, go to your Bluetooth and connect to the RC car (whatever the Bluetooth name is for the device) once you have successfully connected, open the app (Bluetooth RC car) and connect to the Bluetooth device again. _If you are using the remote controller you should already be connected to the RC car._
 
+NOTE: If you connect to the RC Car using your android phone and it ask for a password, the default password is 1234.
+
 # Debugging Motors
 If you have been able to connect to your RC car, but it is going the wrong direction, you may need to swap the motor wires.
 - If your car is going backward when it should be going forward - Swap the red and black wires on both motors.
