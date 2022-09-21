@@ -4,14 +4,8 @@ The following tutorial will get you up and running to build an RC car with the p
 
 ### Bill of Materials
 
-![](/assets/readme/brain_board.jpeg)
-  _1 brain board with Arduino Nano and battery connector_
-![](/assets/readme/battery.jpeg)
-  _1 9v battery_
-- 1 motor board
-- 2 gear motors
-- 1 Bluetooth module (HC-05 or 06)
-- 2 tires
+![](/assets/tutorial/component_layout.png)
+
 
 # Electronics Assembly
 
