@@ -1,0 +1,3 @@
+- 4 io lines are needed to power the motor driver.
+- A pair of UART lines are needed for Bluetooth.
+- Swap 9V battery on main board for AAA connected with JST PH 2.0
