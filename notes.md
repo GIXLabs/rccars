@@ -13,19 +13,19 @@ The RC form factor is numbered starting with pin 1 in the top left and going clo
 | 4 | A0 | | ADC0 |
 | 5 | A1 | | ADC1 |
 | 6 | A2 | | ADC2 |
-| 7 | A3 | | |
-| 8 | A4 | | |
-| 9 | A5 | | |
-| 10 | A6 | | |
-| 11 | A7 | | |
-| 12 | 5V | Used by Bluetooth board for power | VBUS |
-| 13 | RST | | |
+| 7 | A3 | | GP2 |
+| 8 | A4 | SDA(not used, but should be replicated) | GP20 |
+| 9 | A5 | SCL(not used, but should be replicated) | GP21 |
+| 10 | A6 | | GP3 |
+| 11 | A7 | | GP 14 |
+| 12 | 5V | Used by Bluetooth board for power | VSYS |
+| 13 | RST | | RUN |
 | 14 | GND | Used by motor board for ground | |
-| 15 | VIN | Power in, currently 9V, used by motor board for power | VBUS |
+| 15 | VIN | Power in, currently 9V, used by motor board for power | VSYS |
 | --- | --- | --- | |
 | 16 | TX1 | | GP1 |
 | 17 | RX0 | | GP0 |
-| 18 | RST | | |
+| 18 | RST | | GP15 |
 | 19 | GND | | GND |
 | 20 | D2 | Goes into RXD on Bluetooth | GP16 |
 | 21 | D3 | Goes into TXD on Bluetooth | GP17 |
