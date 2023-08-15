@@ -5792,6 +5792,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="+3V4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5868,6 +5869,9 @@ Source: AVX .. aphvc.pdf</description>
 </instance>
 <instance part="P+1" gate="VCC" x="-86.36" y="22.86" smashed="yes">
 <attribute name="VALUE" x="-88.9" y="20.32" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="P+2" gate="VCC" x="-208.28" y="45.72" smashed="yes">
+<attribute name="VALUE" x="-210.82" y="43.18" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -5947,6 +5951,15 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="-86.36" y1="20.32" x2="-86.36" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="15"/>
+<wire x1="-213.36" y1="50.8" x2="-215.9" y2="50.8" width="0.1524" layer="91"/>
+<label x="-215.9" y="50.8" size="1.778" layer="95"/>
+<wire x1="-215.9" y1="50.8" x2="-215.9" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="-215.9" y1="40.64" x2="-208.28" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="P+2" gate="VCC" pin="VCC"/>
+<wire x1="-208.28" y1="40.64" x2="-208.28" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="1" class="0">
@@ -6079,13 +6092,6 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="U1" gate="G$1" pin="!RUN"/>
 <wire x1="-22.86" y1="114.3" x2="-25.4" y2="114.3" width="0.1524" layer="91"/>
 <label x="-25.4" y="114.3" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="15" class="0">
-<segment>
-<pinref part="U$4" gate="G$1" pin="15"/>
-<wire x1="-213.36" y1="50.8" x2="-215.9" y2="50.8" width="0.1524" layer="91"/>
-<label x="-215.9" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="18" class="0">
