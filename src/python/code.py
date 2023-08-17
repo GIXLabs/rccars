@@ -13,16 +13,28 @@ class motor:
         self.b1b = pwmio.PWMOut(b1b)
 
     def forward(self):
+        self.a1a.duty_cycle = 0
+        self.a1b.duty_cycle = self.speed
+        self.b1a.duty_cycle = 0
+        self.b1b.duty_cycle = self.speed
+    
+    def backward(self):
         self.a1a.duty_cycle = self.speed
         self.a1b.duty_cycle = 0
-        self.b1b.duty_cycle = self.speed
-        self.b1a.duty_cycle = 0
+        self.b1a.duty_cycle = self.speed
+        self.b1b.duty_cycle = 0
 
     def left(self):
-        pass
+        self.a1a.duty_cycle = 0
+        self.a1b.duty_cycle = self.speed
+        self.b1a.duty_cycle = self.speed
+        self.b1b.duty_cycle = 0
 
     def right(self):
-        pass
+        self.a1a.duty_cycle = self.speed
+        self.a1b.duty_cycle = 0
+        self.b1a.duty_cycle = 0
+        self.b1b.duty_cycle = self.speed
 
     def stop(self):
         self.a1a.duty_cycle = 0
@@ -52,12 +64,15 @@ if __name__ == "__main__":
                 rc_car.forward()
                 print("Forward")
             elif byte_read == b'B':
+                rc_car.backward()
                 print("Backward")
             elif byte_read == b'S':
                 rc_car.stop()
                 print("Stop")
             elif byte_read == b'L':
+                rc_car.left()
                 print("Left")
             elif byte_read == b'R':
                 print("Right")
+                rc_car.right()
         time.sleep(.01)
