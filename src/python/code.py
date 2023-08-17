@@ -1,6 +1,7 @@
 import time
 import board
 import pwmio
+import busio
 from digitalio import DigitalInOut, Direction
 
 class motor: 
@@ -31,14 +32,32 @@ class motor:
     
     def boost(self):
         pass
+    
+    def set_speed(self, speed):
+        if speed <= 65535 and speed > 0:
+            self.speed = speed
+        else:
+            print("Speed must be between 0 and 65535, inclusive.")
 
 rc_car = motor(board.GP6, board.GP5, board.GP11, board.GP10)
+uart = busio.UART(board.GP16, board.GP17, baudrate=38400, timeout=0 )
 
 if __name__ == "__main__":
     while True:
-        rc_car.forward()
-        print("Go")
-        time.sleep(2)
-        print("Stop")
-        rc_car.stop()
-        time.sleep(2)
+        print(f"UART Queue Length {uart.in_waiting}")
+        byte_read = uart.read(1)
+        if byte_read:
+            print(byte_read)
+            if byte_read == b'F':
+                rc_car.forward()
+                print("Forward")
+            elif byte_read == b'B':
+                print("Backward")
+            elif byte_read == b'S':
+                rc_car.stop()
+                print("Stop")
+            elif byte_read == b'L':
+                print("Left")
+            elif byte_read == b'R':
+                print("Right")
+        time.sleep(.01)
