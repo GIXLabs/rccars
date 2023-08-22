@@ -5,29 +5,35 @@ from rc_car import motor
 
 if __name__ == "__main__":
     rc_car = motor(board.GP6, board.GP5, board.GP11, board.GP10)
-    uart = busio.UART(board.GP16, board.GP17, baudrate=38400, timeout=0 )
-    
+    bluetooth = busio.UART(board.GP16, board.GP17, baudrate=38400, timeout=0 )
+    last_boost = -10
+
     while True:
-        byte_read = uart.read(1)
-        if byte_read:
-            print(byte_read)
-            if byte_read == b'F':
+        command = bluetooth.read(1)
+        if command:
+            print(command)
+            if command == b'F':
                 rc_car.forward()
-            elif byte_read == b'B':
+            elif command == b'B':
                 rc_car.backward()
-            elif byte_read == b'S':
+            elif command == b'S':
                 rc_car.stop()
-            elif byte_read == b'L':
+            elif command == b'L':
                 rc_car.left()
-            elif byte_read == b'R':
+            elif command == b'R':
                 rc_car.right()
-            elif byte_read == b'Q':
+            elif command == b'Q':
                 pass
-            elif byte_read == b'N':
+            elif command == b'N':
                 # Check whether enough time has elapsed since last
-                # Set speed to max
-                # time.sleep(3)
-                # Set speed back to normal
-                # Clear Bluetooth buffer
-                pass
+                if time.monotonic() > (last_boost + 10):
+                    # Set speed to max
+                    rc_car.set_speed(65535)
+                    rc_car.forward()
+                    time.sleep(2)
+                    # Set speed back to normal
+                    rc_car.set_speed(40000)
+                    # Clear Bluetooth buffer
+                    bluetooth.reset_input_buffer()
+                    last_boost = time.monotonic()
         time.sleep(.01)
