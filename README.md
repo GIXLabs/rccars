@@ -1,6 +1,6 @@
 # Purpose
 
-The following tutorial will get you up and running to build an RC car with the provided materials. All of the soldering is already done and the code is flashed onto the brain board. It will be your responsibility to use the tools provided to you in your orientation bag along with the tools available in the Prototyping Labs to design and build a chassis for your car.
+The following tutorial will get you up and running to build an RC car with the provided materials. All of the soldering is already done and the most of the code is flashed onto the brain board. It will be your responsibility to use the tools provided to you in your orientation bag along with the tools available in the Prototyping Lab to design and build a chassis for your car.
 
 ### Bill of Materials
 
@@ -9,7 +9,7 @@ The following tutorial will get you up and running to build an RC car with the p
 
 # Electronics Assembly
 
-1. Collect the above components from the Prototyping Labs staff.
+1. Collect the above components from the Prototyping Lab staff.
 
 1. You want to stack the **motor board** on top of the **brain board**. To indicate it's stacked properly, ensure that the rounded corners of the board and pins are aligned.
 
@@ -25,24 +25,24 @@ The following tutorial will get you up and running to build an RC car with the p
 
 1. Attach the gear motors to the body of the RC car that you have designed/built and assemble the tires.
 
-1. After you connect the 9V battery, LEDs should light up on the brain board and Bluetooth board. If it doesn't turn on then the battery connector may not be connected properly or the 9v battery is dead. Check both!
+1. After you turn on the AAA batteries, LEDs should light up on the brain board and Bluetooth board. If it doesn't turn on then the battery connector may not be connected properly or the AAA batteries are dead. Check both!
 
-# Connecting via App
+# Flashing Code
 
-1. If you have an Android phone, go to the play store and install [Bluetooth RC Car](https://play.google.com/store/apps/details?id=braulio.calle.bluetoothRCcontroller&hl=en_US&gl=US).
+1. The code for the brain board is written in CircuitPython, which means you will not need to download any software to edit and manipulate the code. 
 
-1. Once the app has installed, go to your phone's Bluetooth settings and connect to the Bluetooth device with the same name as is on the back of your HC-05 (should start with "RCA" and then a number). The password should be 1234, but if that doesn't work, try 0000.
+1. Download the RC Car code from [here](). Make sure it is named `code.py`.
 
-1. Open the RC Car app and click on the gear icon.
+1. Using a micro USB cable, connect the brain board to your computer (you do not need to disconnect the other boards). Your computer should now have a new USB drive available named `CIRCUITPY` where the code is stored.
 
-1. Select your car from the list (should start with "RCA" and then a number).
+1. Click and drag `code.py` onto `CIRCUITPY`
 
-1. The circle on the app should change from red to green.
-
-1. Your car is now paired! You may need to troubleshoot your motor connections at this point (see below).
+1. Your code should now be running on the brain board. If you would like to edit this code, just open `code.py` in any text editor (TextEdit and NotePad are fine). The new code will run whenever you save.
+    1. Editing code this way does not give you access to any debugging outputs, so you may want to edit using Mu or Thonny so you can read any `print()` statements you add to the code.
+    1. The max speed of the default code is slow, which you may want to change if you want to win the race.
 
 # Connecting via Remote
-1. Plug in the 9V batteries on both your remote and your car.
+1. Plug in the 9V batteries on both your remote and turn on the AAA batteries on your car.
 
 1. The lights on the Bluetooth dongles (HC-05) should blink for a while, then stop blinking when they have successfully paired.
 
@@ -55,5 +55,3 @@ If you have been able to connect to your RC car, but it is going the wrong direc
 - For other problems, ask a member of the Prototyping Labs staff.
 
 ### Congratulations you are now connected to the RC car! Happy racing! 🏁🏎
-
-To change the speed of the RC car, you'll need to learn how to flash code to the RC car [here](https://github.com/GIXLabs/rccars/blob/main/tutorials/flash_code.md).
