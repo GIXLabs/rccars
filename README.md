@@ -11,15 +11,13 @@ The following tutorial will get you up and running to build an RC car with the p
 
 1. Collect the above components from the Prototyping Lab staff.
 
-1. You want to stack the **motor board** on top of the **brain board**. To indicate it's stacked properly, ensure that the rounded corners of the board and pins are aligned.
+1. Attach the components to the individual boards. AAA battery pack to brain board (only goes in one way). Bluetooth module to Bluetooth board (RCA, not RCM). Motors to motor board (needs a screwdriver and wires may need to be switched later).
 
-1. Connect the **2 gear motors** to the motor driver. The motor driver has screw terminals (green) where you can attach the pins. Either a Phillips-head or flat-head screwdriver will work. You may need to flip these at a later step if your car is going the wrong direction.
+    ![Component assembly](assets/tutorial/component_assembly.svg)
 
-1. Place the HC-05 that starts with "RCA" in the 6-pin socket on the **Bluetooth board**. The labels on the board (VCC, GND, EN, and so on) should match.
+1. Stack the boards together with the brain at the bottom and Bluetooth at the top. Make sure to align them properly (see image).
 
-1. Place the HC-05 that starts with "RCM" in the 6-pin socket on the **remote board**. The labels on the board (VCC, GND, EN, and so on) should match. If you are using an Android phone, instead of the remote, skip this step.
-
-1. Stack the **Bluetooth board** on top of the **motor board**. Make sure the rounded corners and pins are aligned.
+    ![Full assembly](assets/tutorial/full_assembly.svg)
 
 1. Design and build the body of the RC car, you are welcome to use the materials provided in the Prototyping Labs from cardboard to wood. Make sure it holds everything! If you do decide to use the MDF, birch, or acrylic make sure you have done your [first laser cut tutorial](https://gixlabs.github.io/how_to/first_lasercut.html) before using any of the laser cutters.
 
