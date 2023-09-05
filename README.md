@@ -17,7 +17,7 @@ The following tutorial will get you up and running to build an RC car with the p
 
 1. Place the HC-05 that starts with "RCA" in the 6-pin socket on the **Bluetooth board**. The labels on the board (VCC, GND, EN, and so on) should match.
 
-1. Place the HC-06 that starts with "RCM" in the 6-pin socket on the **remote board**. The labels on the board (VCC, GND, EN, and so on) should match. If you are using an Android phone, instead of the remote, skip this step.
+1. Place the HC-05 that starts with "RCM" in the 6-pin socket on the **remote board**. The labels on the board (VCC, GND, EN, and so on) should match. If you are using an Android phone, instead of the remote, skip this step.
 
 1. Stack the **Bluetooth board** on top of the **motor board**. Make sure the rounded corners and pins are aligned.
 
@@ -30,16 +30,16 @@ The following tutorial will get you up and running to build an RC car with the p
 # Flashing Code
 
 1. The code for the brain board is written in CircuitPython, which means you will not need to download any software to edit and manipulate the code. 
+1. Download the RC Car code from [here](src/python/code.py). Make sure it is named `code.py`.
 
-1. Download the RC Car code from [here](). Make sure it is named `code.py`.
+    ![Image of the button to click](assets/tutorial/dl_code.svg)
 
 1. Using a micro USB cable, connect the brain board to your computer (you do not need to disconnect the other boards). Your computer should now have a new USB drive available named `CIRCUITPY` where the code is stored.
-
-1. Click and drag `code.py` onto `CIRCUITPY`
-
+1. Click and drag `code.py` onto `CIRCUITPY`, replacing the file that is on the drive.
 1. Your code should now be running on the brain board. If you would like to edit this code, just open `code.py` in any text editor (TextEdit and NotePad are fine). The new code will run whenever you save.
-    1. Editing code this way does not give you access to any debugging outputs, so you may want to edit using Mu or Thonny so you can read any `print()` statements you add to the code.
+    1. Editing code this way does not give you access to any debugging outputs, so you may want to edit using [Mu](https://codewith.mu/en/download) or [Thonny](https://thonny.org/) so you can read any `print()` statements you add to the code.
     1. The max speed of the default code is slow, which you may want to change if you want to win the race.
+    1. Python uses spacing in a particular way, so you may need to match the indendation of lines.
 
 # Connecting via Remote
 1. Plug in the 9V batteries on both your remote and turn on the AAA batteries on your car.

@@ -25,9 +25,9 @@ if __name__ == "__main__":
             elif command == b'Q':
                 pass
             elif command == b'N':
-                # Check whether enough time has elapsed since last
+                # Check whether enough time has elapsed since last boost
                 if time.monotonic() > (last_boost + 10):
-                    # Set speed to max
+                    # Set speed to maximum possible value (65535)
                     rc_car.set_speed(65535)
                     rc_car.forward()
                     time.sleep(2)
