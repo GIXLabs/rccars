@@ -43,12 +43,12 @@ void loop() {
   else if (!digitalRead(LBUMPER))
   {
     Serial.println("Left bumper pressed");
-    BTserial.print('F');  
+    BTserial.print('N');  
   }
   else if (!digitalRead(RBUMPER))
   {
     Serial.println("Right bumper pressed");
-    BTserial.print('F');  
+    BTserial.print('Q');  
   }
   else
   {

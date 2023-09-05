@@ -1,7 +1,7 @@
 #include <SoftwareSerial.h>
 
-#define BT_MASTER   "RCM_20"
-#define BT_APPREN   "RCA_20"
+#define BT_MASTER   "RCM_29"
+#define BT_APPREN   "RCA_29"
 String APPREN_ADDRESS;
 
 SoftwareSerial apprenSerial(5, 4); // RX, TX
@@ -43,6 +43,7 @@ void setup() {
   delay(100);
   masterSerial.print("AT+UART=38400,0,0\r\n");
   delay(200);
+  Serial.println("Devices flashed with new names successfully.");
 }
 
 void loop() {
