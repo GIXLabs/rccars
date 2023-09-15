@@ -4,7 +4,7 @@ The following tutorial will get you up and running to build an RC car with the p
 
 ### Bill of Materials
 
-![](/assets/tutorial/component_layout.png)
+![](/assets/tutorial/component_layout.svg)
 
 
 # Electronics Assembly
