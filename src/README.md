@@ -23,7 +23,7 @@ The car controls direction via a scheme called tank steering. Instead of having 
 | B | Go backwards by spinning both motors backward |
 | S | Stop both motors (note: there is no button associated with this on the remote) |
 | Q | Currently does nothing, but could be programmed on the car to do whatever you would like |
-| N | Boost by turning up the speed to the maximum for 3 seconds. 10 second cooldown |
+| N | Boost by turning up the speed to the maximum for 2 seconds. 10 second cooldown |
 
 # Boost
 The boost is the most confusing part of the code. It works by first detecting that the 'N' character was sent.

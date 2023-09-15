@@ -39,9 +39,9 @@ The following tutorial will get you up and running to build an RC car with the p
 # Connecting via Remote
 1. Plug in the 9V batteries on both your remote and turn on the AAA batteries on your car.
 
-1. The lights on the Bluetooth dongles (HC-05) should blink for a while, then stop blinking when they have successfully paired.
+1. The lights on the Bluetooth dongles (HC-05) will stop blinking when they have successfully paired.
 
-1. If it fails to pair, try power cycling the car and the remote.
+1. If it fails to pair, try power cycling the car ands the remote.
 
 # Make your Chassis
 1. Design and build the body of the RC car, you are welcome to use the materials provided in the Prototyping Labs from cardboard to wood. Make sure it holds everything! If you do decide to use the MDF, birch, or acrylic make sure you have done your [first laser cut tutorial](https://gixlabs.github.io/how_to/first_lasercut.html) before using any of the laser cutters.
