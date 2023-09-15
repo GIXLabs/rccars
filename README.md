@@ -19,7 +19,7 @@ The following tutorial will get you up and running to build an RC car with the p
 
     ![Full assembly](assets/tutorial/full_assembly.svg)
 
-1. Try turning on the AAA battery holder. If you've done things correctly, the blue and red lights on the Bluetooth module should start blinking.
+1. Try placing 3 AAA batteries in their holder and turn it on. If you've assembled everything correctly, the blue and red lights on the underside of the Bluetooth module should start blinking.
 
 # Flashing Code
 
@@ -34,6 +34,7 @@ The following tutorial will get you up and running to build an RC car with the p
     1. Editing code this way does not give you access to any debugging outputs, so you may want to edit using [Mu](https://codewith.mu/en/download) or [Thonny](https://thonny.org/) so you can read any `print()` statements you add to the code.
     1. The max speed of the default code is slow, which you may want to change if you want to win the race.
     1. Python uses spacing in a particular way, so you may need to match the indendation of lines.
+    1. For more details on how the code works see [here.](src/README.md)
 
 # Connecting via Remote
 1. Plug in the 9V batteries on both your remote and turn on the AAA batteries on your car.
