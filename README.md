@@ -37,6 +37,8 @@ The following tutorial will get you up and running to build an RC car with the p
     1. For more details on how the code works see [here.](src/README.md)
 
 # Connecting via Remote
+1. Place the Bluetooth module marked `RCM` in the remote. It should only fit one way.
+
 1. Plug in the 9V batteries on both your remote and turn on the AAA batteries on your car.
 
 1. The lights on the Bluetooth dongles (HC-05) will stop blinking when they have successfully paired.
@@ -47,6 +49,8 @@ The following tutorial will get you up and running to build an RC car with the p
 1. Design and build the body of the RC car, you are welcome to use the materials provided in the Prototyping Labs from cardboard to wood. Make sure it holds everything! If you do decide to use the MDF, birch, or acrylic make sure you have done your [first laser cut tutorial](https://gixlabs.github.io/how_to/first_lasercut.html) before using any of the laser cutters.
 
 1. Attach the gear motors to the body of the RC car that you have designed/built and assemble the tires. Depending on how you attach the motors, you may have to change some wires to get it to move forward (instructions below).
+
+1. We've made a really basic base you can laser as a starting point if you'd like. You can find them [here](CAD/svg). It is meant to be used with a ping pong, ahem, sorry, table tennis ball.
 
 # Debugging Motors
 If you have been able to connect to your RC car, but it is going the wrong direction, you may need to swap the motor wires.
