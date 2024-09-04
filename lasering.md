@@ -4,30 +4,30 @@
     1. You will get an email and you'll need to click "Click here to get started." Feel free to skip the tutorials.
 1. "Create a new design" and "Upload a file" in the [Glowforge interface](https://app.glowforge.com)
 
-    ![Image of Glowforge home screen](/assets/glowforge_home.svg)
+    ![Image of Glowforge home screen](/assets/laser_tutorial/glowforge_home.svg)
 
 1. Find the 1/8" MDF in the laser material storage and put a sheet of it in your laser on the black honeycomb tray. Position doesn't matter much, and you can close the lid once you have the piece in. If you can, try to use pieces that already have something cut out of them. The numbers in the top right of the Glowforge interface indicate which laser is yours. The number on the machine is near the barcode.
 1. You will need to set the material to "Medium Cherry Plywood" in the top left of the Glowforge interface. You may have to search using the search box.
 
-    ![Image showing where to select materials](/assets/glowforge_materials.svg)
+    ![Image showing where to select materials](/assets/laser_tutorial.glowforge_materials.svg)
     
     1. Greyed out parts are ones outside the Glowforge's cuttable area and will need to be moved onto the material.
 
 1. Add any additional features you might want. [Here is a file with some pieces you can scale and move around in the Glowforge interface.](/CAD) There is a download symbol on each of these pages that you'll need to use.
 
-    ![Image of Glowforge interface](/assets/glowforge_add.svg)
+    ![Image of Glowforge interface](/assets/laser_tutorial/glowforge_add.svg)
 
 1. In the Glowforge interface, click and drag those pieces around on the generated box pieces to place them where you want them. Be careful not to accidentally scale the pieces from the template, but the other pieces can be scaled to your liking.
 
 1. Set the text to "Ignore."
 
-    ![Image showing where Ignore is found](/assets/glowforge_ignore.svg)
+    ![Image showing where Ignore is found](/assets/laser_tutorial/glowforge_ignore.svg)
 
 1. Make sure that all of your parts are on the material in the laser and are not greyed out. You can box select groups of them and move them around.
     1. If you are using scraps, you can move items you don't want to cut outside the cuttable area. Anything greyed out won't be cut, which is sometimes desirable.
 1. Click "Print" in the top right of the interface.
 
-    ![Image showing the Print button](/assets/glowforge_print.svg)
+    ![Image showing the Print button](/assets/laser_tutorial/glowforge_print.svg)
 
 1. Press the big glowing button on the Glowforge and stay to watch your cut. Watching your cut is important as fires are common in lasers.
 1. Once the laser has stopped making noise, you can open the lid and pull the parts out (don't worry, they aren't hot).
