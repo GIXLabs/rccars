@@ -1,4 +1,9 @@
+# Important laser rules
+1. **DON'T WALK AWAY FROM A RUNNING LASER** - every makerspace eventually burns down due to lasers. We suggest bringing a stool and your computer with you. Unattended cuts will be interrupted and the user may have their access revoked.
+1. Only use approved materials - materials already in the Lab are pre-approved, but you will need to check with Prototyping Lab staff if you want to cut or engrave something else.
+
 # Making a basic laser chassis (no design experience needed)
+
 1. Choose from one of the templates made by our staff, downloading the file as an svg.
     1. Formula E by Aayush Kumar (Cohort 7). [SVG here.](/CAD/svg/RC_Car_Formula-E/RC_Car_Formula-E_layout.svg)
     
