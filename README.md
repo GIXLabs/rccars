@@ -46,11 +46,9 @@ The following tutorial will get you up and running to build an RC car with the p
 1. If it fails to pair, try power cycling the car ands the remote.
 
 # Make your Chassis
-1. Design and build the body of the RC car, you are welcome to use the materials provided in the Prototyping Labs from cardboard to wood. Make sure it holds everything! We've produced a tutorial if you'd like to start with a lasered template [here](lasering.md).
+1. Design and build the body of the RC car, you are welcome to use the materials provided in the Prototyping Lab from cardboard to wood. Make sure it holds everything! We've produced a tutorial if you'd like to start with a lasered template [here](lasering.md).
 
 1. Attach the gear motors to the body of the RC car that you have designed/built and assemble the tires. Depending on how you attach the motors, you may have to change some wires to get it to move forward (instructions below).
-
-1. We've made a really basic base you can laser as a starting point if you'd like. You can find them [here](CAD/svg). It is meant to be used with a ping pong, ahem, sorry, table tennis ball.
 
 # Debugging Motors
 If you have been able to connect to your RC car, but it is going the wrong direction, you may need to swap the motor wires.
