@@ -1,5 +1,8 @@
 # Making a basic laser chassis (no design experience needed)
 1. Choose from one of the templates made by our staff, downloading the file as an svg.
+    1. Formula E by Aayush Kumar (Cohort 7). [SVG here.](/CAD/svg/RC_Car_Formula-E/RC_Car_Formula-E_layout.svg)
+    
+    ![Formula-E car image](/CAD/svg/RC_Car_Formula-E/Formula-E_Image.jpg)
 1. Ask a member of staff to invite you to the Glowforge system. You will need to sign up for an account, but it is free. Please skip any features that ask for a credit card.
     1. You will get an email and you'll need to click "Click here to get started." Feel free to skip the tutorials.
 1. "Create a new design" and "Upload a file" in the [Glowforge interface](https://app.glowforge.com)
@@ -7,13 +10,13 @@
     ![Image of Glowforge home screen](/assets/laser_tutorial/glowforge_home.svg)
 
 1. Find the 1/8" MDF in the laser material storage and put a sheet of it in your laser on the black honeycomb tray. Position doesn't matter much, and you can close the lid once you have the piece in. If you can, try to use pieces that already have something cut out of them. The numbers in the top right of the Glowforge interface indicate which laser is yours. The number on the machine is near the barcode.
-1. You will need to set the material to "Medium Cherry Plywood" in the top left of the Glowforge interface. You may have to search using the search box.
+1. You will need to set the material to "Medium Draftboard" in the top left of the Glowforge interface. You may have to search using the search box.
 
-    ![Image showing where to select materials](/assets/laser_tutorial.glowforge_materials.svg)
+    ![Image showing where to select materials](/assets/laser_tutorial/glowforge_materials.svg)
     
     1. Greyed out parts are ones outside the Glowforge's cuttable area and will need to be moved onto the material.
 
-1. Add any additional features you might want. [Here is a file with some pieces you can scale and move around in the Glowforge interface.](/CAD) There is a download symbol on each of these pages that you'll need to use.
+1. Add any additional features you might want. [Here is a file with some pieces you can scale and move around in the Glowforge interface.](/CAD/svg) There is a download symbol on each of these pages that you'll need to use.
 
     ![Image of Glowforge interface](/assets/laser_tutorial/glowforge_add.svg)
 
