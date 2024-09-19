@@ -15,7 +15,7 @@
 
     1. Batperson car by Kevin Arne. [SVG here.](/CAD/svg/RC_Car_Batperson/base_template.svg)
     
-    ![Batperson car image](/CAD/svg/RC_car_Batperson/image.svg)
+    ![Batperson car image](/CAD/svg/RC_Car_Batperson/image.svg)
 1. Ask a member of staff to invite you to the Glowforge system. You will need to sign up for an account, but it is free. Please skip any features that ask for a credit card.
     1. You will get an email and you'll need to click "Click here to get started." Feel free to skip the tutorials.
 1. "Create a new design" and "Upload a file" in the [Glowforge interface](https://app.glowforge.com)
